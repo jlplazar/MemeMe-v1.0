@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF5FBCAC1BFD1BA90035D074 /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5FBCAB1BFD1BA90035D074 /* Meme.swift */; };
+		CF5FBCBB1BFE8A030035D074 /* MemeMe_1_0.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF5FBCB91BFE8A030035D074 /* MemeMe_1_0.xcdatamodeld */; };
 		CFCF1C741BF8394300D9175A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF1C731BF8394300D9175A /* AppDelegate.swift */; };
 		CFCF1C761BF8394300D9175A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF1C751BF8394300D9175A /* ViewController.swift */; };
 		CFCF1C791BF8394300D9175A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFCF1C771BF8394300D9175A /* Main.storyboard */; };
-		CFCF1C7C1BF8394300D9175A /* MemeMe_1_0.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFCF1C7A1BF8394300D9175A /* MemeMe_1_0.xcdatamodeld */; };
 		CFCF1C7E1BF8394300D9175A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFCF1C7D1BF8394300D9175A /* Assets.xcassets */; };
 		CFCF1C811BF8394300D9175A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFCF1C7F1BF8394300D9175A /* LaunchScreen.storyboard */; };
 		CFCF1C8C1BF8394300D9175A /* MemeMe_1_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF1C8B1BF8394300D9175A /* MemeMe_1_0Tests.swift */; };
@@ -35,11 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF5FBCAB1BFD1BA90035D074 /* Meme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
+		CF5FBCBA1BFE8A030035D074 /* MemeMe_1_0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MemeMe_1_0.xcdatamodel; sourceTree = "<group>"; };
 		CFCF1C701BF8394300D9175A /* MemeMe 1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MemeMe 1.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFCF1C731BF8394300D9175A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFCF1C751BF8394300D9175A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CFCF1C781BF8394300D9175A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CFCF1C7B1BF8394300D9175A /* MemeMe_1_0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MemeMe_1_0.xcdatamodel; sourceTree = "<group>"; };
 		CFCF1C7D1BF8394300D9175A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFCF1C801BF8394300D9175A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFCF1C821BF8394300D9175A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF5FBCAA1BFD1B7B0035D074 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CF5FBCAB1BFD1BA90035D074 /* Meme.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		CFCF1C671BF8394200D9175A = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +109,14 @@
 		CFCF1C721BF8394300D9175A /* MemeMe 1.0 */ = {
 			isa = PBXGroup;
 			children = (
+				CF5FBCAA1BFD1B7B0035D074 /* Models */,
 				CFCF1C731BF8394300D9175A /* AppDelegate.swift */,
 				CFCF1C751BF8394300D9175A /* ViewController.swift */,
 				CFCF1C771BF8394300D9175A /* Main.storyboard */,
 				CFCF1C7D1BF8394300D9175A /* Assets.xcassets */,
 				CFCF1C7F1BF8394300D9175A /* LaunchScreen.storyboard */,
 				CFCF1C821BF8394300D9175A /* Info.plist */,
-				CFCF1C7A1BF8394300D9175A /* MemeMe_1_0.xcdatamodeld */,
+				CF5FBCB91BFE8A030035D074 /* MemeMe_1_0.xcdatamodeld */,
 			);
 			path = "MemeMe 1.0";
 			sourceTree = "<group>";
@@ -258,8 +269,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF5FBCBB1BFE8A030035D074 /* MemeMe_1_0.xcdatamodeld in Sources */,
 				CFCF1C761BF8394300D9175A /* ViewController.swift in Sources */,
-				CFCF1C7C1BF8394300D9175A /* MemeMe_1_0.xcdatamodeld in Sources */,
+				CF5FBCAC1BFD1BA90035D074 /* Meme.swift in Sources */,
 				CFCF1C741BF8394300D9175A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +499,7 @@
 				CFCF1C9D1BF8394300D9175A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CFCF1C9E1BF8394300D9175A /* Build configuration list for PBXNativeTarget "MemeMe 1.0Tests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +508,7 @@
 				CFCF1CA01BF8394300D9175A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CFCF1CA11BF8394300D9175A /* Build configuration list for PBXNativeTarget "MemeMe 1.0UITests" */ = {
 			isa = XCConfigurationList;
@@ -503,16 +517,17 @@
 				CFCF1CA31BF8394300D9175A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		CFCF1C7A1BF8394300D9175A /* MemeMe_1_0.xcdatamodeld */ = {
+		CF5FBCB91BFE8A030035D074 /* MemeMe_1_0.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				CFCF1C7B1BF8394300D9175A /* MemeMe_1_0.xcdatamodel */,
+				CF5FBCBA1BFE8A030035D074 /* MemeMe_1_0.xcdatamodel */,
 			);
-			currentVersion = CFCF1C7B1BF8394300D9175A /* MemeMe_1_0.xcdatamodel */;
+			currentVersion = CF5FBCBA1BFE8A030035D074 /* MemeMe_1_0.xcdatamodel */;
 			path = MemeMe_1_0.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
