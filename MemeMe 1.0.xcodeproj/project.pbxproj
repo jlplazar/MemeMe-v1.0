@@ -14,8 +14,6 @@
 		CFCF1C791BF8394300D9175A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFCF1C771BF8394300D9175A /* Main.storyboard */; };
 		CFCF1C7E1BF8394300D9175A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFCF1C7D1BF8394300D9175A /* Assets.xcassets */; };
 		CFCF1C811BF8394300D9175A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFCF1C7F1BF8394300D9175A /* LaunchScreen.storyboard */; };
-		CFCF1C8C1BF8394300D9175A /* MemeMe_1_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF1C8B1BF8394300D9175A /* MemeMe_1_0Tests.swift */; };
-		CFCF1C971BF8394300D9175A /* MemeMe_1_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCF1C961BF8394300D9175A /* MemeMe_1_0UITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +44,7 @@
 		CFCF1C801BF8394300D9175A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFCF1C821BF8394300D9175A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFCF1C871BF8394300D9175A /* MemeMe 1.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MemeMe 1.0Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFCF1C8B1BF8394300D9175A /* MemeMe_1_0Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeMe_1_0Tests.swift; sourceTree = "<group>"; };
-		CFCF1C8D1BF8394300D9175A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFCF1C921BF8394300D9175A /* MemeMe 1.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MemeMe 1.0UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFCF1C961BF8394300D9175A /* MemeMe_1_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeMe_1_0UITests.swift; sourceTree = "<group>"; };
-		CFCF1C981BF8394300D9175A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				CFCF1C721BF8394300D9175A /* MemeMe 1.0 */,
-				CFCF1C8A1BF8394300D9175A /* MemeMe 1.0Tests */,
-				CFCF1C951BF8394300D9175A /* MemeMe 1.0UITests */,
 				CFCF1C711BF8394300D9175A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,24 +111,6 @@
 				CF5FBCB91BFE8A030035D074 /* MemeMe_1_0.xcdatamodeld */,
 			);
 			path = "MemeMe 1.0";
-			sourceTree = "<group>";
-		};
-		CFCF1C8A1BF8394300D9175A /* MemeMe 1.0Tests */ = {
-			isa = PBXGroup;
-			children = (
-				CFCF1C8B1BF8394300D9175A /* MemeMe_1_0Tests.swift */,
-				CFCF1C8D1BF8394300D9175A /* Info.plist */,
-			);
-			path = "MemeMe 1.0Tests";
-			sourceTree = "<group>";
-		};
-		CFCF1C951BF8394300D9175A /* MemeMe 1.0UITests */ = {
-			isa = PBXGroup;
-			children = (
-				CFCF1C961BF8394300D9175A /* MemeMe_1_0UITests.swift */,
-				CFCF1C981BF8394300D9175A /* Info.plist */,
-			);
-			path = "MemeMe 1.0UITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,7 +254,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFCF1C8C1BF8394300D9175A /* MemeMe_1_0Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +261,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFCF1C971BF8394300D9175A /* MemeMe_1_0UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
