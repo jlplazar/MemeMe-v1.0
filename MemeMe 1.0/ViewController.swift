@@ -60,18 +60,24 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBAction func loadPhotoFromCamera(sender: AnyObject) {
         photoSourceViewController.sourceType = .Camera
-        self.presentViewController(photoSourceViewController, animated: true, completion: nil)
+        presentViewController(photoSourceViewController, animated: true, completion: nil)
     }
     
     @IBAction func loadPhotoFromAlbum(sender: AnyObject) {
         photoSourceViewController.sourceType = .PhotoLibrary
-        self.presentViewController(photoSourceViewController, animated: true, completion: nil)
+        presentViewController(photoSourceViewController, animated: true, completion: nil)
     }
     
     @IBAction func shareMeme(sender: AnyObject) {
         memedImage = renderMeme()
         let activityViewController = UIActivityViewController(activityItems: [memedImage!], applicationActivities: nil)
-        self.presentViewController(activityViewController, animated: true, completion: saveMeme)
+        activityViewController.completionWithItemsHandler = {
+            (activity, success, items, error) in
+            if success {
+                self.saveMeme()
+            }
+        }
+        presentViewController(activityViewController, animated: true, completion: nil)
     }
     
     @IBAction func cancelEditingMeme(sender: AnyObject) {
@@ -102,8 +108,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func renderMeme() -> UIImage {
         // Render view to an image
         navigationBar.hidden = true
-        UIGraphicsBeginImageContext(self.view.frame.size)
-        self.view.drawViewHierarchyInRect(self.view.frame, afterScreenUpdates: true)
+        UIGraphicsBeginImageContext(view.frame.size)
+        view.drawViewHierarchyInRect(view.frame, afterScreenUpdates: true)
         let memedImage : UIImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         navigationBar.hidden = false
@@ -185,8 +191,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     /**** Meme functions ****/
     
     func saveMeme() {
-        let meme = Meme(topText: topTextField.text!, bottomText: bottomTextField.text!, image: memeImageView.image!, memedImage: memedImage!)
-        meme.save()
+        let _ = Meme(topText: topTextField.text!, bottomText: bottomTextField.text!, image: memeImageView.image!, memedImage: memedImage!)
     }
     
 }
